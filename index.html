@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Marking System</title>
+</head>
+<body>
+    <form id="sform" onsubmit="handleformSubmit(event)">
+        <label>Select a Date: <input type="date" id="attendanceDay" name="attndDay"></label>
+        <button type="submit" id="attndSeach">Search</button>
+    </form>
+</body>
+<form id="studentForm" onsubmit="studentAttendanceMarked(event)"></form>
+<div id="divId"></div>
+<form id="student-report" onsubmit="studentReport(event)">
+    <button id="btn" type="submit" >Fetch Report</button>
+</form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+<script src="index.js"></script>
+</html>
